@@ -5,20 +5,22 @@ import {Footer} from './components/Footer';
 import {Home} from './pages/Home'
 import {About} from './pages/About'
 import {Contact} from './pages/Contact'
-import {Movie} from './pages/Movie'
+import {Category} from './pages/Category'
 import {NotFound} from './pages/NotFound'
+import {Recipe} from './pages/Recipe'
 
 function App() {
   return (
     <>
-      <Router>
+      <Router basename='/react_project_food'>
         <Header/>
         <main className="container content">
             <Routes>
               <Route index element={<Home/>}/>
               <Route path="/about" element={<About/>}/>
               <Route path="/contacts" element={<Contact/>}/>
-              <Route path='/movies/:title' element={<Movie/>}/>
+              <Route path='/category/:name' element={<Category/>}/>
+              <Route path='/meal/:id' element={<Recipe/>}/>
               <Route path="*" element={<NotFound/>}/>
             </Routes>
         </main>
