@@ -5,14 +5,17 @@ function Header() {
     <nav className="green darken-1">
       <div className="nav-wrapper">
         <Link to="/" className="brand-logo">
-          React Movies
+          React Food
         </Link>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contacts">Contacts</Link>
+            <a
+              href="https://github.com/FedMike/react_project_food"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Repo
+            </a>
           </li>
         </ul>
       </div>
