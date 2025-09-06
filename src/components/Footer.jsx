@@ -6,7 +6,7 @@ function Footer() {
           © {new Date().getFullYear()} Copyright Text
           <a
             className="grey-text text-lighten-4 right"
-            href="https://fedmike.github.io/react_project_showcase/"
+            href="https://github.com/FedMike/react_project_food"
             target="_blank"
             rel="noreferrer"
           >
